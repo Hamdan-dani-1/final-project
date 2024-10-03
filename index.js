@@ -1,5 +1,5 @@
 const apiKey = "534860f66914543659dd01b6342d5945";
-const baseApiURL = "http://api.openweathermap.org/data/2.5/forecast";
+const baseApiURL = "https://api.openweathermap.org/data/2.5/forecast";
 const countryShow = document.querySelector('.location-icon');
 const temperature = document.querySelector('.cels');
 const storm = document.querySelector('.nort');

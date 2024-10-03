@@ -323,9 +323,9 @@ color:#fff
         /* More padding on smaller screens */
     }
 }
-
 @media (max-width: 768px) {
     .side {
+
         width: 33%;
         /* position: relative; */
     }
@@ -344,5 +344,341 @@ color:#fff
         position: absolute;
         z-index: 4;
         flex-direction: column;
+    }
+}
+@media (max-width: 320px) {
+    .search-section {
+        padding: 10px 20px;
+        /* More padding on smaller screens */
+    }
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.maiin::before {
+    content: ""; 
+    background-image: url('assests/joy-stamp-21279 (1).webp');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 1;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.main {
+    font-size: 4rem;
+    text-align: center;
+    color: #b3b3b3;
+    padding-bottom: 12rem;
+    font-weight: 900;
+}
+
+.maintext {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 93vh;
+    font-family: "Playwrite DE Grund";
+    font-style: normal;
+}
+
+.side {
+    font-family: "Playwrite DE Grund";
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 276px;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(47, 32, 32, 0.2);
+    z-index: 2;
+}
+
+.sidebar {
+    font-family: "Playwrite DE Grund";
+    font-style: normal;
+    padding: 20px;
+    color: white;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.location-icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.location-text {
+    margin-right: 10px;  
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+}
+
+.location:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.weather-container {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-weather h1 {
+    font-family: "Playwrite DE Grund";
+    font-size: 4em;
+}
+
+.current-weather p {
+    font-size: 1.2em;
+    color: #b0bec5;
+}
+
+.forecast-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.tabs button {
+    background-color: #546e7a;
+    color: white;
+    border: 1px solid #b3b3b365;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tabs button.active {
+    background-color: #aba8a405;
+    color: white;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 2px;
+    margin: 2px 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.day p {
+    margin: 5px 0;
+    color: #f8f3f3;
+}
+
+.day:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    gap: 3px;
+    scroll-behavior: smooth;
+    margin-top: -12rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hour {
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+    color: #ffffff9c;
+}
+
+.hour p {
+    margin: 5px 0;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.active {
+    background-color: rgba(255, 204, 128, 0.8);
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search {
+    background-color: rgba(0, 0, 0, 0.187);
+    border: 1px solid #546e7a;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search:active {
+    border: 1px solid #b0bec5;
+}
+
+.cels {
+    color: #fff2f2d9;
+}
+
+.btn {
+    border: 1px solid #546e7a;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #546e7a42;
+    color: #fff;
+}
+
+.forcast-h {
+    color: #ffffffcb;
+    font-weight: 800;
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+    .main {
+        font-size: 2.5rem;
+        padding-bottom: 8rem;
+    }
+
+    .maintext {
+        height: 85vh;
+    }
+
+    .side {
+        width: 100%;
+        height: auto;
+        position: relative;
+        backdrop-filter: none;
+        background-color: rgba(47, 32, 32, 0.4);
+    }
+
+    .sidebar {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .location {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .current-weather h1 {
+        font-size: 2.5rem;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .hourly-forecast {
+        margin-top: -8rem;
+    }
+
+    .hour {
+        min-width: 50px;
+    }
+
+    .search {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main {
+        font-size: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .maintext {
+        height: 80vh;
+    }
+
+    .location {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .current-weather h1 {
+        font-size: 2rem;
+    }
+
+    .tabs button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .hour {
+        min-width: 40px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .maiin::before{
+        height: 200%;
+    }
+    .weather-container{
+        margin-bottom: 6rem;
     }
 }
